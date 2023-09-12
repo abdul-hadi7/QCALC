@@ -9,6 +9,10 @@ public class App {
     }
 
     public static void main(String[] args) {
+        StandardCalculator calc = new StandardCalculator();
+        calc.add(1, 1);
+        calc.printResult();
+        calc.clearResult();
         System.out.println(new App().getGreeting());
     }
 }
