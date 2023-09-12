@@ -7,12 +7,19 @@ public class App {
     public String getGreeting() {
         return "Hello World!";
     }
+    
 
     public static void main(String[] args) {
-        StandardCalculator calc = new StandardCalculator();
-        calc.add(1, 1);
-        calc.printResult();
-        calc.clearResult();
+
         System.out.println(new App().getGreeting());
+
+        ScientificCalculator calc = new ScientificCalculator();
+
+        int result= calc.modulo(5, 2);
+
+        System.out.println("modulo =" + result);
+
     }
+
+
 }
